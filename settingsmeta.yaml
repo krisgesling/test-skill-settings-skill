@@ -1,17 +1,21 @@
 
 skillMetadata:
   sections:
-    - name: Options << Name of section
+    - name: Introductory text
+      fields:
+        - type: label
+          label: This Skill settings block was created to showcase the range of settings available, as well as test systems that handle or display settings.
+    - name: Single text field
       fields:
         - name: internal_python_variable_name
           type: text
-          label: Setting Friendly Display Name
+          label: One setting
           value: ""
-          placeholder: demo prompt in the input box
-    - name: Login << Name of another section
+          placeholder: prompt in the input box
+    - name: Example Login
       fields:
         - type: label
-          label: Just a little bit of extra info for the user to understand following settings
+          label: Just a little bit of extra info for the user to understand the following settings
         - name: username
           type: text
           label: Username
@@ -20,3 +24,39 @@ skillMetadata:
           type: password
           label: Password
           value: ""
+    - name: Checkbox Field Examples
+      fields:
+        - name: my_bool_false
+          type: checkbox
+          label: This is an example checkbox. It creates a Boolean value.
+          value: "false"
+        - name: my_bool_true
+          type: checkbox
+          label: This is an example checkbox. This is defaulted to true.
+          value: "true"
+    - name: Dividing label section
+      fields:
+        - type: label
+          label: This is a section containing a label between other setting sections to create a break.
+    - name: Number Field Example
+      fields:
+        - name: my_number
+          type: number
+          label: Enter any number
+          value: 7
+        - name: my_long_number
+          type: number
+          label: A large default number
+          value: 991513213567
+    - name: Select Field Example
+      fields:
+        - name: my_selected_option
+          type: select
+          label: Select an option
+          options: Option 1|option_one;Option 2|option_two;Option 3|option_three
+          value: option_one
+        - name: many_options
+          type: select
+          label: Select from many option
+          options: Option 1|option_one;Option 2|option_two;Option 3|option_three;Option 4|option_four;Option 5|option_five;Option 6|option_six;Option 7|option_seven;Option 8|option_eight;Option 9|option_nine;Option 10|option_ten;Option 11|option_eleven;Option 12|option_twelve
+          value: option_ten
